@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Site</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="videos/video1.mp4"
+          autoplay
+          muted
+          loop
+          class="active"
+        ></video>
+        <video src="videos/video2.mp4" autoplay muted loop></video>
+        <video src="videos/video3.mp4" autoplay muted loop></video>
+        <video src="videos/video4.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">World <span>.</span></a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <span class="menuIcon" onclick="toggleMenu();"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Tokyo</h2>
+              <p>
+                Experience holidays in Tokyo and find the best time to go and
+                the best places to visit. Travel and find happiness within
+                yourself. Allow us to convince you. You won't regret it. Cheap
+                and Fun Travel. Sustainable Tourism. Travel Information.
+              </p>
+            </div>
+            <div>
+              <h2>Paris</h2>
+              <p>
+                If you are visiting Paris, there are 10 things you cannot miss
+                in the City of Light: Eiffel tower, a dinner cruise or the
+                gardens of Versailles. Come on over!
+              </p>
+            </div>
+            <div>
+              <h2>Egypt</h2>
+              <p>
+                Explore The Secrets in Egyptian History and Relax in Hurghada
+                With Nile Cruise Vacation! Save Memories and Live Your Best
+                Experience Ever. Book Now with Free Cancellation! 24/7
+              </p>
+            </div>
+            <div>
+              <h2>Maldives</h2>
+              <p>
+                Let the island specialists help you plan your dream holiday in
+                the Maldives! See for yourself why the Maldives is the ultimate
+                luxury island holiday! Great snorkelling. Honeymoon
+                Recommendations. Water Villas. Maldives Experts. Featured
+                hotels: Aaaveee, Angaga.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="images/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/instagram.png" /></a>
+          </li>
+        </ul>
+
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();">
+            <img src="images/left.png" />
+          </li>
+          <li onclick="nextSlide();nextSlideText();">
+            <img src="images/right.png" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

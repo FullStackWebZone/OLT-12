@@ -1,0 +1,11 @@
+var(--bg-black-900);
+var(--bg-black-100);
+var(--bg-black-50);
+var(--text-black-900);
+var(--text-black-700);
+var(--text-black-600);
+var(--text-black-300);
+var(--outer-shadow);
+var(--outer-shadow-0);
+var(--inner-shadow);
+var(--skin-color);

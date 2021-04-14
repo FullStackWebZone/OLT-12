@@ -1,0 +1,373 @@
+*, *::before, *::after {
+	 padding: 0;
+	 margin: 0 auto;
+	 box-sizing: border-box;
+}
+ body {
+	 background-color: #111;
+	 color: #fff;
+	 min-height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 perspective: 800px;
+	 perspective-origin: center calc(50% - 250px);
+	 overflow: hidden;
+}
+ .coin {
+	 position: relative;
+	 width: 420px;
+	 height: 420px;
+	 transform-style: preserve-3d;
+	 animation: rotate 15s infinite linear;
+}
+ @keyframes rotate {
+	 from {
+		 transform: rotateX(90deg) rotate(0deg);
+	}
+	 to {
+		 transform: rotateX(90deg) rotate(360deg);
+	}
+}
+ .blured {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 600px;
+	 height: 600px;
+	 border-radius: 50%;
+	 animation: bluredScale 4s infinite alternate ease-in-out;
+	 background-image: radial-gradient(#000 0px, transparent 150px, #111 300px), conic-gradient(hsl(0, 50%, 20%), hsl(10, 50%, 20%), hsl(20, 50%, 20%), hsl(30, 50%, 20%), hsl(40, 50%, 20%), hsl(50, 50%, 20%), hsl(60, 50%, 20%), hsl(70, 50%, 20%), hsl(80, 50%, 20%), hsl(90, 50%, 20%), hsl(100, 50%, 20%), hsl(110, 50%, 20%), hsl(120, 50%, 20%), hsl(130, 50%, 20%), hsl(140, 50%, 20%), hsl(150, 50%, 20%), hsl(160, 50%, 20%), hsl(170, 50%, 20%), hsl(180, 50%, 20%), hsl(190, 50%, 20%), hsl(200, 50%, 20%), hsl(210, 50%, 20%), hsl(220, 50%, 20%), hsl(230, 50%, 20%), hsl(240, 50%, 20%), hsl(250, 50%, 20%), hsl(260, 50%, 20%), hsl(270, 50%, 20%), hsl(280, 50%, 20%), hsl(290, 50%, 20%), hsl(300, 50%, 20%), hsl(310, 50%, 20%), hsl(320, 50%, 20%), hsl(330, 50%, 20%), hsl(340, 50%, 20%), hsl(350, 50%, 20%));
+}
+ @keyframes bluredScale {
+	 from {
+		 transform: translate(-50%, -50%) scale(0.8);
+	}
+	 to {
+		 transform: translate(-50%, -50%) scale(1);
+	}
+}
+ .edgs div {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 36px;
+	 height: 38px;
+	 background-color: #bfaa40;
+	 animation: edgsY 4s infinite alternate ease-in-out;
+}
+ .edgs div:nth-child(1) {
+	 --thisAngle: 0deg;
+	 background-image: linear-gradient(#602020, #bf4040);
+}
+ .edgs div:nth-child(2) {
+	 --thisAngle: 10deg;
+	 background-image: linear-gradient(#602b20, #bf5540);
+}
+ .edgs div:nth-child(3) {
+	 --thisAngle: 20deg;
+	 background-image: linear-gradient(#603520, #bf6a40);
+}
+ .edgs div:nth-child(4) {
+	 --thisAngle: 30deg;
+	 background-image: linear-gradient(#604020, #bf8040);
+}
+ .edgs div:nth-child(5) {
+	 --thisAngle: 40deg;
+	 background-image: linear-gradient(#604a20, #bf9540);
+}
+ .edgs div:nth-child(6) {
+	 --thisAngle: 50deg;
+	 background-image: linear-gradient(#605520, #bfaa40);
+}
+ .edgs div:nth-child(7) {
+	 --thisAngle: 60deg;
+	 background-image: linear-gradient(#606020, #bfbf40);
+}
+ .edgs div:nth-child(8) {
+	 --thisAngle: 70deg;
+	 background-image: linear-gradient(#556020, #aabf40);
+}
+ .edgs div:nth-child(9) {
+	 --thisAngle: 80deg;
+	 background-image: linear-gradient(#4a6020, #95bf40);
+}
+ .edgs div:nth-child(10) {
+	 --thisAngle: 90deg;
+	 background-image: linear-gradient(#406020, #80bf40);
+}
+ .edgs div:nth-child(11) {
+	 --thisAngle: 100deg;
+	 background-image: linear-gradient(#356020, #6abf40);
+}
+ .edgs div:nth-child(12) {
+	 --thisAngle: 110deg;
+	 background-image: linear-gradient(#2b6020, #55bf40);
+}
+ .edgs div:nth-child(13) {
+	 --thisAngle: 120deg;
+	 background-image: linear-gradient(#206020, #40bf40);
+}
+ .edgs div:nth-child(14) {
+	 --thisAngle: 130deg;
+	 background-image: linear-gradient(#20602b, #40bf55);
+}
+ .edgs div:nth-child(15) {
+	 --thisAngle: 140deg;
+	 background-image: linear-gradient(#206035, #40bf6a);
+}
+ .edgs div:nth-child(16) {
+	 --thisAngle: 150deg;
+	 background-image: linear-gradient(#206040, #40bf80);
+}
+ .edgs div:nth-child(17) {
+	 --thisAngle: 160deg;
+	 background-image: linear-gradient(#20604a, #40bf95);
+}
+ .edgs div:nth-child(18) {
+	 --thisAngle: 170deg;
+	 background-image: linear-gradient(#206055, #40bfaa);
+}
+ .edgs div:nth-child(19) {
+	 --thisAngle: 180deg;
+	 background-image: linear-gradient(#206060, #40bfbf);
+}
+ .edgs div:nth-child(20) {
+	 --thisAngle: 190deg;
+	 background-image: linear-gradient(#205560, #40aabf);
+}
+ .edgs div:nth-child(21) {
+	 --thisAngle: 200deg;
+	 background-image: linear-gradient(#204a60, #4095bf);
+}
+ .edgs div:nth-child(22) {
+	 --thisAngle: 210deg;
+	 background-image: linear-gradient(#204060, #4080bf);
+}
+ .edgs div:nth-child(23) {
+	 --thisAngle: 220deg;
+	 background-image: linear-gradient(#203560, #406abf);
+}
+ .edgs div:nth-child(24) {
+	 --thisAngle: 230deg;
+	 background-image: linear-gradient(#202b60, #4055bf);
+}
+ .edgs div:nth-child(25) {
+	 --thisAngle: 240deg;
+	 background-image: linear-gradient(#202060, #4040bf);
+}
+ .edgs div:nth-child(26) {
+	 --thisAngle: 250deg;
+	 background-image: linear-gradient(#2b2060, #5540bf);
+}
+ .edgs div:nth-child(27) {
+	 --thisAngle: 260deg;
+	 background-image: linear-gradient(#352060, #6a40bf);
+}
+ .edgs div:nth-child(28) {
+	 --thisAngle: 270deg;
+	 background-image: linear-gradient(#402060, #8040bf);
+}
+ .edgs div:nth-child(29) {
+	 --thisAngle: 280deg;
+	 background-image: linear-gradient(#4a2060, #9540bf);
+}
+ .edgs div:nth-child(30) {
+	 --thisAngle: 290deg;
+	 background-image: linear-gradient(#552060, #aa40bf);
+}
+ .edgs div:nth-child(31) {
+	 --thisAngle: 300deg;
+	 background-image: linear-gradient(#602060, #bf40bf);
+}
+ .edgs div:nth-child(32) {
+	 --thisAngle: 310deg;
+	 background-image: linear-gradient(#602055, #bf40aa);
+}
+ .edgs div:nth-child(33) {
+	 --thisAngle: 320deg;
+	 background-image: linear-gradient(#60204a, #bf4095);
+}
+ .edgs div:nth-child(34) {
+	 --thisAngle: 330deg;
+	 background-image: linear-gradient(#602040, #bf4080);
+}
+ .edgs div:nth-child(35) {
+	 --thisAngle: 340deg;
+	 background-image: linear-gradient(#602035, #bf406a);
+}
+ .edgs div:nth-child(36) {
+	 --thisAngle: 350deg;
+	 background-image: linear-gradient(#60202b, #bf4055);
+}
+ @keyframes edgsY {
+	 from {
+		 transform: translate(-50%, -50%) rotateX(90deg) rotateY(var(--thisAngle)) translateZ(200px) translateY(18px);
+	}
+	 to {
+		 transform: translate(-50%, -50%) rotateX(90deg) rotateY(var(--thisAngle)) translateZ(200px) translateY(72px);
+	}
+}
+ .faces div {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 38px;
+	 height: 400px;
+	 clip-path: polygon(0 0, 49% 50%, 0 100%, 100% 100%, 51% 50%, 100% 0);
+	 transform-origin: center;
+	 animation: facesZ 4s infinite alternate ease-in-out;
+}
+ .faces div:nth-child(1) {
+	 background-image: linear-gradient(#40bfbf, #ddd, #bf4040);
+	 --thisAngle: 180deg;
+}
+ .faces div:nth-child(2) {
+	 background-image: linear-gradient(#40aabf, #ddd, #bf5540);
+	 --thisAngle: 190deg;
+}
+ .faces div:nth-child(3) {
+	 background-image: linear-gradient(#4095bf, #ddd, #bf6a40);
+	 --thisAngle: 200deg;
+}
+ .faces div:nth-child(4) {
+	 background-image: linear-gradient(#4080bf, #ddd, #bf8040);
+	 --thisAngle: 210deg;
+}
+ .faces div:nth-child(5) {
+	 background-image: linear-gradient(#406abf, #ddd, #bf9540);
+	 --thisAngle: 220deg;
+}
+ .faces div:nth-child(6) {
+	 background-image: linear-gradient(#4055bf, #ddd, #bfaa40);
+	 --thisAngle: 230deg;
+}
+ .faces div:nth-child(7) {
+	 background-image: linear-gradient(#4040bf, #ddd, #bfbf40);
+	 --thisAngle: 240deg;
+}
+ .faces div:nth-child(8) {
+	 background-image: linear-gradient(#5540bf, #ddd, #aabf40);
+	 --thisAngle: 250deg;
+}
+ .faces div:nth-child(9) {
+	 background-image: linear-gradient(#6a40bf, #ddd, #95bf40);
+	 --thisAngle: 260deg;
+}
+ .faces div:nth-child(10) {
+	 background-image: linear-gradient(#8040bf, #ddd, #80bf40);
+	 --thisAngle: 270deg;
+}
+ .faces div:nth-child(11) {
+	 background-image: linear-gradient(#9540bf, #ddd, #6abf40);
+	 --thisAngle: 280deg;
+}
+ .faces div:nth-child(12) {
+	 background-image: linear-gradient(#aa40bf, #ddd, #55bf40);
+	 --thisAngle: 290deg;
+}
+ .faces div:nth-child(13) {
+	 background-image: linear-gradient(#bf40bf, #ddd, #40bf40);
+	 --thisAngle: 300deg;
+}
+ .faces div:nth-child(14) {
+	 background-image: linear-gradient(#bf40aa, #ddd, #40bf55);
+	 --thisAngle: 310deg;
+}
+ .faces div:nth-child(15) {
+	 background-image: linear-gradient(#bf4095, #ddd, #40bf6a);
+	 --thisAngle: 320deg;
+}
+ .faces div:nth-child(16) {
+	 background-image: linear-gradient(#bf4080, #ddd, #40bf80);
+	 --thisAngle: 330deg;
+}
+ .faces div:nth-child(17) {
+	 background-image: linear-gradient(#bf406a, #ddd, #40bf95);
+	 --thisAngle: 340deg;
+}
+ .faces div:nth-child(18) {
+	 background-image: linear-gradient(#bf4055, #ddd, #40bfaa);
+	 --thisAngle: 350deg;
+}
+ .faces div:nth-child(19) {
+	 background-image: linear-gradient(#bf4040, #ddd, #40bfbf);
+	 --thisAngle: 360deg;
+}
+ .faces div:nth-child(20) {
+	 background-image: linear-gradient(#bf5540, #ddd, #40aabf);
+	 --thisAngle: 370deg;
+}
+ .faces div:nth-child(21) {
+	 background-image: linear-gradient(#bf6a40, #ddd, #4095bf);
+	 --thisAngle: 380deg;
+}
+ .faces div:nth-child(22) {
+	 background-image: linear-gradient(#bf8040, #ddd, #4080bf);
+	 --thisAngle: 390deg;
+}
+ .faces div:nth-child(23) {
+	 background-image: linear-gradient(#bf9540, #ddd, #406abf);
+	 --thisAngle: 400deg;
+}
+ .faces div:nth-child(24) {
+	 background-image: linear-gradient(#bfaa40, #ddd, #4055bf);
+	 --thisAngle: 410deg;
+}
+ .faces div:nth-child(25) {
+	 background-image: linear-gradient(#bfbf40, #ddd, #4040bf);
+	 --thisAngle: 420deg;
+}
+ .faces div:nth-child(26) {
+	 background-image: linear-gradient(#aabf40, #ddd, #5540bf);
+	 --thisAngle: 430deg;
+}
+ .faces div:nth-child(27) {
+	 background-image: linear-gradient(#95bf40, #ddd, #6a40bf);
+	 --thisAngle: 440deg;
+}
+ .faces div:nth-child(28) {
+	 background-image: linear-gradient(#80bf40, #ddd, #8040bf);
+	 --thisAngle: 450deg;
+}
+ .faces div:nth-child(29) {
+	 background-image: linear-gradient(#6abf40, #ddd, #9540bf);
+	 --thisAngle: 460deg;
+}
+ .faces div:nth-child(30) {
+	 background-image: linear-gradient(#55bf40, #ddd, #aa40bf);
+	 --thisAngle: 470deg;
+}
+ .faces div:nth-child(31) {
+	 background-image: linear-gradient(#40bf40, #ddd, #bf40bf);
+	 --thisAngle: 480deg;
+}
+ .faces div:nth-child(32) {
+	 background-image: linear-gradient(#40bf55, #ddd, #bf40aa);
+	 --thisAngle: 490deg;
+}
+ .faces div:nth-child(33) {
+	 background-image: linear-gradient(#40bf6a, #ddd, #bf4095);
+	 --thisAngle: 500deg;
+}
+ .faces div:nth-child(34) {
+	 background-image: linear-gradient(#40bf80, #ddd, #bf4080);
+	 --thisAngle: 510deg;
+}
+ .faces div:nth-child(35) {
+	 background-image: linear-gradient(#40bf95, #ddd, #bf406a);
+	 --thisAngle: 520deg;
+}
+ .faces div:nth-child(36) {
+	 background-image: linear-gradient(#40bfaa, #ddd, #bf4055);
+	 --thisAngle: 530deg;
+}
+ @keyframes facesZ {
+	 from {
+		 transform: translate(-50%, -50%) rotate(var(--thisAngle)) translateZ(36px);
+	}
+	 to {
+		 transform: translate(-50%, -50%) rotate(var(--thisAngle)) translateZ(90px);
+	}
+}
+ 

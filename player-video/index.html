@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Video</title>
+</head>
+<body>
+  
+  <div class="container">
+    <video id="video" src="./assets/Ocean .mp4"></video>
+    <div class="controller">
+      <img class="button" onclick="play()" src="./assets/play.svg" alt="imagem de inicar">
+      <img class="button" onclick="pause()" src="./assets/pause.svg" alt="imagem de pausa">
+      <img class="button" onclick="stopv()" src="./assets/stop.svg" alt="imagem de parar">
+      <img class="button" onclick="diminuir_vel()" src="./assets/fast_rewind.svg" alt="imagem de diminuição de velocidade">
+      <img class="button" onclick="aumentar_vel()" src="./assets/fast_forward.svg" alt="imagem de aumento de velocidade">
+      <img class="button" onclick="replay10()" src="./assets/replay_10.svg" alt="imagem de retroceder 10 segundos">
+      <img class="button" onclick="forward10()" src="./assets/forward_10.svg" alt="imagem de avançar 10 segundos">
+      <img class="button" onclick="fulscreen()" src="./assets/fullscreen-open.svg" alt="imagem de abertura do fullscreen">
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
